@@ -1,3 +1,8 @@
+<div ng-repeat="post in posts">
+  <a ng-href="{{ post.url}}">{{ post.title }}</a>
+  <a ng-click="deletePosts($index)">delete</a>
+</div>
+
 <form ng-submit="submitPost()">
   <input type="text" ng-model="post.title" />
   <input type="test" ng-model="post.url" />
