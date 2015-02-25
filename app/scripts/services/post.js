@@ -13,7 +13,7 @@ app.factory('Post', function($firebase, FIREBASE_URL) {
       return $firebase(ref.child('posts').child(postId)).$asObject();
     },
     delete: function(post) {
-      return posts.$remove.(post);
+      return posts.$remove(post);
     }
   };
 });
