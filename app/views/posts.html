@@ -1,6 +1,6 @@
 <div ng-repeat="(postId, post) in posts">
   <a ng-href="{{ post.url}}">{{ post.title }}</a>
-  <a ng-click="deletePost(postID)">delete</a>
+  <a ng-click="deletePost(postId)">delete</a>
 </div>
 
 <form ng-submit="submitPost()">
