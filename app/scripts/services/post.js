@@ -1,5 +1,5 @@
 'use strict';
 
 app.factory('Post', function($resource) {
-  return $resource('https://tgbooks.firebaseIO.com/posts/:id.json');
+  return $resource('https://tfbooks.firebaseIO.com/posts/:id.json');
 });
