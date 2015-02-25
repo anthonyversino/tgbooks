@@ -6,7 +6,7 @@ app.controller('PostsCtrl', function($scope, Post) {
 
   $scope.submitPost =  function () {
     Post.save($scope.post, function (ref) {
-      $scope.posts[ref.name] = $scope.posts;
+      $scope.posts[ref.name] = $scope.post;
       $scope.post = {url: 'http://', title: ''};
     });
     $scope.post = {url: 'http://', title: ''};
