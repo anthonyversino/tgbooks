@@ -12,7 +12,7 @@ app.controller('PostsCtrl', function($scope, Post) {
     $scope.post = {url: 'http://', title: ''};
   };
 
-  $scope.deletePost = function (index) {
+  $scope.deletePost = function (postId) {
     Post.delete({id: postId}, function (){
       delete $scope.posts[postId];
     });
