@@ -9,7 +9,6 @@ app.controller('PostsCtrl', function($scope, Post) {
       $scope.posts[ref.name] = $scope.post;
       $scope.post = {url: 'http://', title: ''};
     });
-    $scope.post = {url: 'http://', title: ''};
   };
 
   $scope.deletePost = function (postId) {
